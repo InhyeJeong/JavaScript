@@ -19,7 +19,7 @@
 <img src="./image/1.PNG" width="1000" >	
 </p>
 
-## 1) calc()
+## 1) calc() : https://developer.mozilla.org/ko/docs/Web/CSS/calc
 * 가변영역에 calc() 적용
 
 ```css
@@ -36,7 +36,7 @@
 }
 ```
 
-## 1-1) Vendor prefix : cross browsing
+## 1-1) Vendor prefix : Cross Browsing
 * chrome : -webkit-
 * firefox : -moz-
 * opera : -o-
