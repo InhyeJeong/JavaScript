@@ -14,7 +14,9 @@
 * Promise() : https://www.youtube.com/watch?v=CA5EDD4Hjz4
 
 # 2. 가변영역 고정영역 함께 사용하는 레이아웃
-
+<p align="center">
+<img src="./images/1.PNG" width="1000" >	
+</p>
 ## 1) calc()
 * 가변영역에 calc() 적용
 
