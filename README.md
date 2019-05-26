@@ -1,6 +1,6 @@
 # JavaScript-Study
 * JavaScript study
-* Code review study
+* Code Review study
 
 # 1. Promise()
 
