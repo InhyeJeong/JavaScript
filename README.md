@@ -70,3 +70,47 @@
 ```
 ---------------------
 * 가변영역 고정영역 함께 사용하는 레이아웃(calc, flex, display) : https://www.youtube.com/watch?v=RthnACwgqr8
+
+# 3. Objec Type
+
+* 자바스크립트의 객체 개념은 생성 방법이나 상속 방식 등에서 C++이나 자바와 같은 기존 객체지향 언어에서의 객체 개념과는 약간 다르다. 자바에서는 클래스를 정의하고, 클래스의 인스턴스를 생성하는 과정에서 객체가 만들어진다. 이에 비해 자바스크립트에서는 **클래스라는 개념이 없고, 객체 리터럴이나 생성자 함수** 등 **별도의 생성 방식**이 존재한다.
+
+## 1) Object() 생성자 함수
+
+```javscript
+//  Object()사용하여 빈 객체 생성
+var foo = new Object();
+
+//  foo 객체 프로퍼티 생성
+foo.name = 'name'
+foo.age = 30
+foo.gender = 'male'
+
+console.log(type of foo) // object
+console.log(foo)  //  { name: 'name', age: 30, gender: 'male' }
+```
+
+## 2) 객체 리터럴 방식
+
+* 리터럴이란 객체를 생성하는 표기법
+
+```javscript
+//  객체 리터럴 방식으로 빈 객체 생성
+var foo = {
+  name: 'name',
+  age: 30,
+  gender: 'male'
+}
+
+//  foo 객체 프로퍼티 생성
+foo.name = 'name'
+foo.age = 30
+foo.gender = 'male'
+
+console.log(type of foo) // object
+console.log(foo)  //  { name: 'name', age: 30, gender: 'male' }
+```
+
+## 2) 생성자 함수 이용
+
+* 함수를 통해서 객체 생성 가능
