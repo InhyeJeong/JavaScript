@@ -153,7 +153,7 @@ console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) //  45
 *  arguments는 **유사배열**이므로 **배열 메서드 사용불가**
 
 ```javascript
-argFunction('2019-02-27T01:53:39Z')
+argFunction(dynamicData)
 
 //  arguments는 유사배열이므로 배열 메서드 사용불가 -> call() 활용
 function argFunction() {
