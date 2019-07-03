@@ -77,7 +77,7 @@
 
 ## 1) Object() 생성자 함수
 
-```javscript
+```javascript
 //  Object()사용하여 빈 객체 생성
 var foo = new Object();
 
@@ -94,7 +94,7 @@ console.log(foo)  //  { name: 'name', age: 30, gender: 'male' }
 
 * 리터럴이란 객체를 생성하는 표기법
 
-```javscript
+```javascript
 //  객체 리터럴 방식으로 빈 객체 생성
 var foo = {
   name: 'name',
