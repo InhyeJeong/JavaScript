@@ -113,4 +113,41 @@ console.log(foo)  //  { name: 'name', age: 30, gender: 'male' }
 
 ## 2) 생성자 함수 이용
 
-* 함수를 통해서 객체 생성 가능
+* 함수도 객체다.
+* 자바스크립트에서는 함수를 **일급 객체(First Class)** 라고 부른다.
+
+```javascript
+//  함수 선언 방식으로 add() 함수 정의
+function add(x, y) {
+  return x + y
+}
+
+//  add() 함수 객체에 result, status 프로퍼티 추가
+add.result = add(3,2)
+add.status = 'ok'
+
+console.log(add.result) //  5
+console.log(add.status)  // 'ok'
+```
+
+# 4. Function
+
+## 1) arguments 객체
+
+* 매개변수 개수가 정확하게 정해지지 않은 함수를 구현하거나, 전달된 인자의 개수에 따라 서로 다른 처리를 해줘야 하는 함수에 유용
+
+```javascript
+function sum() {
+  var result = 0
+  
+  for (var i = 0; i < arguments.length; i++){
+    result += arguments[i]
+  }
+  return result
+}
+
+console.log(sum(1, 2, 3)) //  6
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) //  45
+```
+
+
