@@ -111,7 +111,7 @@ console.log(type of foo) // object
 console.log(foo)  //  { name: 'name', age: 30, gender: 'male' }
 ```
 
-## 2) 생성자 함수 이용
+## 3) 생성자 함수 이용
 
 * 함수도 객체다.
 * 자바스크립트에서는 함수를 **일급 객체(First Class)** 라고 부른다.
@@ -128,6 +128,77 @@ add.status = 'ok'
 
 console.log(add.result) //  5
 console.log(add.status)  // 'ok'
+```
+
+## 4) [Object.assign()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
+* copy : copy.a는 **읽기 전용** 속성
+
+```javascript
+const obj = { a: 1 };
+const copy = Object.assign({}, obj);
+console.log(copy); // { a: 1 }
+```
+
+* merge : 속성은 파라미터 순서에서 더 뒤에 위치한 동일한 속성을 가진 다른 객체에 의해 덮어쓰임
+
+```javascript
+const o1 = { a: 1 };
+const o2 = { b: 2 };
+const o3 = { c: 3 };
+
+const obj = Object.assign(o1, o2, o3);
+console.log(obj); // { a: 1, b: 2, c: 3 }
+console.log(o1);  // { a: 1, b: 2, c: 3 } 대상 객체 자체가 변경됨.
+```
+
+## 5) [Object.keys()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+
+* 메서드는 개체 고유 속성의 이름을 배열로 반환
+
+```javascript
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.keys(object1));
+// expected output: Array ["a", "b", "c"]
+```
+
+* 비열거형(non-enumerables)을 포함한 모든 객체를 원한다면 [Object.getOwnPropertyNames()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)를 참고
+
+## 6) [Object.entries()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+
+* **enumerable 속성** [key, value] 쌍의 배열을 반환
+
+```javascript
+var params = {
+  id: this.Id,
+  startDate: this.startDate,
+  endDate: this.endDate
+}
+
+params = Object.entries(params).map((param) => {
+  return param.join('=')
+}).join('&')
+console.log(params) //  id=testId&startDate=02-01&endDate=02-03
+```
+
+* Converting an Object to **a Map**
+
+```javascript
+const obj = { first: 'hi', second: 25 }; 
+const map = new Map(Object.entries(obj));
+console.log(map); // Map { first: "hi", second: 25 }
+```
+
+* array 구조를 사용하여 **객체를 쉽게 반복** 가능
+
+```javascript
+const obj = { first: 'hi', second: 25 };
+Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "first: hi", "second: 25"
 ```
 
 # 4. Function
