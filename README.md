@@ -235,4 +235,50 @@ function argFunction() {
 
 ```
 
+# 5. [unset - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)
 
+* html
+
+```html
+<p>This text is red</p>
+<div id="sidebar">
+  <p>This text has the default color</p>
+</div>
+```
+
+* css
+
+```style
+p {
+  color: red;
+}
+
+#sidebar p {
+  color: unset;
+}
+
+```
+
+# 6. [minChunks - WebPack](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
+
+```javascript
+module.exports = {
+  //...
+  entry: {
+    vendor: ['jquery', 'other-lib'],
+    app: './entry'
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      // filename: "vendor.js"
+      // (Give the chunk a different name)
+
+      minChunks: Infinity,
+      // (with more entries, this ensures that no other module
+      //  goes into the vendor chunk)
+    })
+  ]
+};
+ ]
+```
