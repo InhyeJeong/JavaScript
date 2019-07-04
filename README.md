@@ -248,7 +248,7 @@ function argFunction() {
 
 * css
 
-```style
+```script
 p {
   color: red;
 }
@@ -280,5 +280,4 @@ module.exports = {
     })
   ]
 };
- ]
 ```
