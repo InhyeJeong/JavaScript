@@ -248,7 +248,7 @@ function argFunction() {
 
 * css
 
-```script
+```css
 p {
   color: red;
 }
