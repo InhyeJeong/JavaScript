@@ -286,14 +286,22 @@ module.exports = {
 
 # 8. [WebPack](https://naradesign.github.io/article/)
 
-* [webpack이란?](https://d2.naver.com/helloworld/0239818)
+## 1) [WebPack이란?](https://d2.naver.com/helloworld/0239818)
 
 <p align="center">
 <img src="./image/2.PNG" width="500" >	
 </p>
 
-* [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
+* 사용 이유 & 배경
+- 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
+- ex) minification을 webpack default cli로 실행 가능
 
-* [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
+```
+$webpack -p
+```
 
-* [WebPack 영상](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
+## 2) [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
+
+## 3) [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
+
+## 4) [WebPack 영상](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
