@@ -260,7 +260,7 @@ p {
 
 ```
 
-# 6. [minChunks - WebPack](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
+# 6. [minChunks - Webpack](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
 
 ```javascript
 module.exports = {
@@ -285,9 +285,9 @@ module.exports = {
 
 # 7. [flexible Layout - CSS](https://naradesign.github.io/article/)
 
-# 8. [WebPack](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
+# 8. [Webpack](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
 
-## 1) [WebPack이란?](https://d2.naver.com/helloworld/0239818)
+## 1) [Webpack이란?](https://d2.naver.com/helloworld/0239818)
 
 <p align="center">
 <img src="./image/2.PNG" width="500" >	
