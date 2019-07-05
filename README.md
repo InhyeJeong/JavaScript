@@ -285,7 +285,7 @@ module.exports = {
 
 # 7. [flexible Layout - CSS](https://naradesign.github.io/article/)
 
-# 8. [WebPack](https://naradesign.github.io/article/)
+# 8. [WebPack](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
 
 ## 1) [WebPack이란?](https://d2.naver.com/helloworld/0239818)
 
@@ -354,4 +354,3 @@ module.exports = {
 $ npm init -y
 ```
 
-## 4) [WebPack 영상](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
