@@ -260,32 +260,9 @@ p {
 
 ```
 
-# 6. [minChunks - Webpack](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
+# 6. [flexible Layout - CSS](https://naradesign.github.io/article/)
 
-```javascript
-module.exports = {
-  //...
-  entry: {
-    vendor: ['jquery', 'other-lib'],
-    app: './entry'
-  },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      // filename: "vendor.js"
-      // (Give the chunk a different name)
-
-      minChunks: Infinity,
-      // (with more entries, this ensures that no other module
-      //  goes into the vendor chunk)
-    })
-  ]
-};
-```
-
-# 7. [flexible Layout - CSS](https://naradesign.github.io/article/)
-
-# 8. [Webpack](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
+# 7. [Webpack](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
 
 ## 1) [Webpack이란?](https://d2.naver.com/helloworld/0239818)
 
@@ -352,5 +329,29 @@ module.exports = {
 
 ```
 $ npm init -y
+```
+
+### b. [minChunks](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
+
+
+```javascript
+module.exports = {
+  //...
+  entry: {
+    vendor: ['jquery', 'other-lib'],
+    app: './entry'
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      // filename: "vendor.js"
+      // (Give the chunk a different name)
+
+      minChunks: Infinity,
+      // (with more entries, this ensures that no other module
+      //  goes into the vendor chunk)
+    })
+  ]
+};
 ```
 
