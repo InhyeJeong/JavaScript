@@ -297,7 +297,7 @@ module.exports = {
 * ex) minification을 webpack default cli로 실행 가능
 
 ```
-$webpack -p
+$ webpack -p
 ```
 
 ### b. 자바스크립트 Code based Modules 관리
@@ -334,6 +334,7 @@ require('main.js')
 
 ### a. webpack.config.js
 
+* [Getting Started : Webpack](https://www.youtube.com/watch?v=fcNAiMSlciI)
 ```javascript
 // webpack.config.js
 // `webpack` command will pick up this config setup by default
@@ -349,7 +350,7 @@ module.exports = {
 ```
 
 ```
-$npm init -y
+$ npm init -y
 ```
 
 ## 4) [WebPack 영상](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
