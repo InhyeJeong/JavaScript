@@ -295,3 +295,5 @@ module.exports = {
 * [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
 * [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
+
+* [WebPack 설명](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
