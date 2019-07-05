@@ -292,7 +292,7 @@ module.exports = {
 <img src="./image/2.PNG" width="500" >	
 </p>
 
-### 사용 이유 & 배경
+### a. 사용 이유 & 배경
 * 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
 * ex) minification을 webpack default cli로 실행 가능
 
@@ -300,7 +300,7 @@ module.exports = {
 $webpack -p
 ```
 
-### 자바스크립트 Code based Modules 관리
+### b. 자바스크립트 Code based Modules 관리
 
 * 자바스크립트 **모듈화의 필요성** (파일베이스 모듈화x, 전역변수 등) : AMD, Common js, ES6(Modules)
 
@@ -318,7 +318,7 @@ $webpack -p
 * 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
 * 가독성이나 다수 모듈 미병행 처리등의 약점 보완위해 Webpack 등장
 
-### 철학
+### c. 철학
 * Everything is Module : 모든 웹 자원(js, css, html)이 모듈 형태로 로딩가능
 
 ```javascript
@@ -332,7 +332,7 @@ require('main.js')
 
 ## 3) [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
 
-### webpack.config.js
+### a. webpack.config.js
 
 ```javascript
 // webpack.config.js
