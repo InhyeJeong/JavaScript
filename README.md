@@ -326,7 +326,7 @@ require('base.css')
 require('main.js')
 ```
 
-* Load only 'what' you need and 'when' : 초기에 불필요한 것들을 모두 로딩하지 않고, 필요할 때 필요한 것만 로딩하여 사용
+* Load only 'what' you need and 'when' you need : 초기에 불필요한 것들을 모두 로딩하지 않고, 필요할 때 필요한 것만 로딩하여 사용
 
 ## 2) [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
