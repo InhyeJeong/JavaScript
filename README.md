@@ -332,4 +332,24 @@ require('main.js')
 
 ## 3) [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
 
+### webpack.config.js
+
+```javascript
+// webpack.config.js
+// `webpack` command will pick up this config setup by default
+var path = require('path');
+
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+```
+
+```
+$npm init -y
+```
+
 ## 4) [WebPack 영상](https://www.youtube.com/playlist?list=PLpkj8RKr48wY2RgNIvcnIWram82a0ZXa8)
