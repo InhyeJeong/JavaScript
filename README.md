@@ -281,3 +281,5 @@ module.exports = {
   ]
 };
 ```
+
+# 7. [flexible Layout - CSS](https://naradesign.github.io/article/)
