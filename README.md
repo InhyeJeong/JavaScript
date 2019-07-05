@@ -292,13 +292,21 @@ module.exports = {
 <img src="./image/2.PNG" width="500" >	
 </p>
 
-* 사용 이유 & 배경
-- 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
-- ex) minification을 webpack default cli로 실행 가능
+### 사용 이유 & 배경
+* 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
+* ex) minification을 webpack default cli로 실행 가능
 
 ```
 $webpack -p
 ```
+
+### 자바스크립트 Code based Modules 관리
+
+* 자바스크립트 모듈화의 필요성 (파일베이스 모듈화x, 전역변수 등) : AMD, Common js, ES6(Modules)
+* 기본 모듈 로더들과의 차이점 : 모듈 간의 관계를 Chunk 단위로 나눠 필요할 때 로딩
+* 현대의 웹에서 JS 역할이 커짐에 따라 , Client Side에 들어가는 코드량이 많아지고 복잡해짐
+* 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
+* 가독성이나 다수 모듈 미병행 처리등의 약점 보완위해 Webpack 등장
 
 ## 2) [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
