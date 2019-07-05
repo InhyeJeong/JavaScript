@@ -327,9 +327,7 @@ module.exports = {
 };
 ```
 
-```
-$ npm init -y
-```
+* [Tutorials](https://github.com/joshua1988/LearnWebpack)
 
 ### b. [minChunks](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)
 
