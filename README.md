@@ -302,7 +302,17 @@ $webpack -p
 
 ### 자바스크립트 Code based Modules 관리
 
-* 자바스크립트 모듈화의 필요성 (파일베이스 모듈화x, 전역변수 등) : AMD, Common js, ES6(Modules)
+* 자바스크립트 **모듈화의 필요성** (파일베이스 모듈화x, 전역변수 등) : AMD, Common js, ES6(Modules)
+
+**문제점 : 전역변수 충돌, 스크립트 로딩 순서, 복잡도에 따른 관리상의 문제**
+
+```javascript
+<script src="module1.js"></script>
+<script src="module2.js"></script>
+<script src="library1.js"></script>
+<script src="module3.js"></script>
+```
+
 * 기본 모듈 로더들과의 차이점 : 모듈 간의 관계를 Chunk 단위로 나눠 필요할 때 로딩
 * 현대의 웹에서 JS 역할이 커짐에 따라 , Client Side에 들어가는 코드량이 많아지고 복잡해짐
 * 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
