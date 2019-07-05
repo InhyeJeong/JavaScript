@@ -288,6 +288,10 @@ module.exports = {
 
 * [webpack이란?](https://d2.naver.com/helloworld/0239818)
 
+<p align="center">
+<img src="./image/2.PNG" width="500" >	
+</p>
+
 * [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
 * [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
