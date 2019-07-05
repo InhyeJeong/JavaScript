@@ -318,6 +318,16 @@ $webpack -p
 * 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
 * 가독성이나 다수 모듈 미병행 처리등의 약점 보완위해 Webpack 등장
 
+### 철학
+* Everything is Module : 모든 웹 자원(js, css, html)이 모듈 형태로 로딩가능
+
+```javascript
+require('base.css')
+require('main.js')
+```
+
+* Load only 'what' you need and 'when' : 초기에 불필요한 것들을 모두 로딩하지 않고, 필요할 때 필요한 것만 로딩하여 사용
+
 ## 2) [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
 ## 3) [웹펙 기본 설정(Entry/Output/Loader/Plugins)](https://www.daleseo.com/webpack-config/)
