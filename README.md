@@ -425,6 +425,8 @@ window.$cookies.remove('cookieName')
 
 # 11. [JavaScript Single Thread](https://seolhun.github.io/JS-SingleThreadJS/)
 
+* call Stack이 비워져야 message Queue 실행됨
+* [single thread 참고](https://www.youtube.com/watch?v=iNH4UQxZexs)
 <p align="center">
 <img src="./image/3.PNG" width="800" >	
 </p>
