@@ -353,3 +353,47 @@ module.exports = {
 };
 ```
 
+# 8. Async / Await vs Promise
+
+## 1) async, await 는 ES8(ECMAScript2017)의 공식 스펙으로 비교적 최근에 정의된 문법입니다
+
+```
+자바스크립트는 싱글 스레드 프로그래밍언어기 때문에 비동기처리가 필수적입니다.
+ex) setTimeout, callback, promise ...
+```
+
+## 2) How to Use
+* **function 키워드 앞**에 **async**만 붙여주면 되고
+* **비동기**로 처리되는 부분 **앞에 await**만 붙여주면 됩니다.
+* **await 뒷부분**이 반드시 **promise 를 반환**해야 한다는 것
+* **async function 자체**도 **promise 를 반환**한다는 것
+
+## 3) Promise와 비교
+
+* promise
+
+```javascript
+const makeRequest = () =>
+  getJSON()
+    .then(data => {
+      console.log(data)
+      return "done"
+    })
+
+makeRequest()
+```
+
+* async / await
+
+```javascript
+const makeRequest = async () => {
+  console.log(await getJSON())
+  return "done"
+}
+
+makeRequest()
+```
+
+--------------------
+* [async, await](https://blueshw.github.io/2018/02/27/async-await/)
+* [자바스크립트의 Async/Await 가 Promises를 사라지게 만들 수 있는 6가지 이유](https://medium.com/@constell99/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-async-await-%EA%B0%80-promises%EB%A5%BC-%EC%82%AC%EB%9D%BC%EC%A7%80%EA%B2%8C-%EB%A7%8C%EB%93%A4-%EC%88%98-%EC%9E%88%EB%8A%94-6%EA%B0%80%EC%A7%80-%EC%9D%B4%EC%9C%A0-c5fe0add656c)
