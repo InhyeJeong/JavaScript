@@ -408,3 +408,4 @@ window.$cookies.remove('cookieName')
 ```
 
 * [Cookie 기본개념](https://www.youtube.com/watch?v=1emZgLiGE4s)
+* [Cookie & Session](https://nesoy.github.io/articles/2017-03/Session-Cookie)
