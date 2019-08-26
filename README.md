@@ -409,3 +409,15 @@ window.$cookies.remove('cookieName')
 
 * [Cookie 기본개념](https://www.youtube.com/watch?v=1emZgLiGE4s)
 * [Cookie & Session](https://nesoy.github.io/articles/2017-03/Session-Cookie)
+
+
+
+# 10. [Web Worker](http://tcpschool.com/html/html5_api_webWorker)
+
+* web worker는 스크립트의 다중 스레드(multi-thread)를 지원합니다.
+* 사용자가 웹 페이지를 이용하면서도, 동시에 시간이 오래 걸리는 자바스크립트 작업도 병행할 수 있도록 해줍니다.
+
+* 매우 복잡한 수학적 계산 작업
+* 원격지에 있는 리소스에 대한 액세스 작업(또는 로컬 스토리지를 액세스 하는 경우)
+* 백그라운드에서 조용히 오랜시간 작업애햐 하는 경우
+* UI 쓰레드에 방해 없이 지속적으로 수행해야 하는 작업 등
