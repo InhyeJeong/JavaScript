@@ -422,3 +422,5 @@ window.$cookies.remove('cookieName')
 * 백그라운드에서 조용히 오랜시간 작업애햐 하는 경우
 * UI 쓰레드에 방해 없이 지속적으로 수행해야 하는 작업 등
 ## 4) [Functions and classes available to workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Functions_and_classes_available_to_workers)
+
+# 11. [JavaScript Single Thread](https://seolhun.github.io/JS-SingleThreadJS/)
