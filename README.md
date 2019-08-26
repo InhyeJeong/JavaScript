@@ -424,3 +424,7 @@ window.$cookies.remove('cookieName')
 ## 4) [Functions and classes available to workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Functions_and_classes_available_to_workers)
 
 # 11. [JavaScript Single Thread](https://seolhun.github.io/JS-SingleThreadJS/)
+
+<p align="center">
+<img src="./image/3.PNG" width="800" >	
+</p>
