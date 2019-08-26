@@ -355,10 +355,10 @@ module.exports = {
 
 # 8. Async / Await vs Promise
 
-## 1) async, await 는 ES8(ECMAScript2017)의 공식 스펙으로 비교적 최근에 정의된 문법입니다
+## 1) async, await는 ES8(ECMAScript2017)의 공식 스펙, 비교적 최근에 정의된 문법
 
 ```
-자바스크립트는 싱글 스레드 프로그래밍언어기 때문에 비동기처리가 필수적입니다.
+자바스크립트는 싱글 스레드 프로그래밍언어기 때문에 비동기처리가 필수.
 ex) setTimeout, callback, promise ...
 ```
 
