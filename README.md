@@ -353,7 +353,7 @@ module.exports = {
 };
 ```
 
-# 8. Async / Await vs Promise
+# 8. [Async / Await vs Promise](https://www.youtube.com/watch?v=JzXjB6L99N4)
 
 ## 1) async, await는 ES8(ECMAScript2017)의 공식 스펙, 비교적 최근에 정의된 문법
 
