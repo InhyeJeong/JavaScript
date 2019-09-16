@@ -431,3 +431,30 @@ window.$cookies.remove('cookieName')
 <p align="center">
 <img src="./image/3.PNG" width="800" >	
 </p>
+
+# 12. object-fit: cover IE 적용 방법
+
+* 부모 div
+
+```style
+.cover-wrapper {
+  width: 500px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+}
+```
+
+* 자식 img
+
+```style
+cover-img {
+  position: absolute;
+  min-width: 1000%;
+  min-height: 1000%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+```
