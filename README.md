@@ -502,6 +502,9 @@ Polyfill은 구현 브라우저에서도 문제없이 사용될 수 있도록 �
 ```
 ## 2) [babel-polyfill](https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a)
 
+
+* babel-polyfill은 core-js, regenerator runtime을 포함하는 모듈
+
 ```
 babel은 문법을 변환해주는 역할만 할 뿐이다.
 polyfill은 프로그램이 처음에 시작될 때 현재 브라우저에서 지원하지 않는 함수를 검사해서
