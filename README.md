@@ -493,3 +493,24 @@ arr4.flat(); // [1, 2, 4, 5]
 array.flat(Infinity);
 // → [1, 2, 3]
 ```
+
+
+# 14. (babel)[https://slides.com/yamoo9/babel#/]
+
+* (babel-polyfill)[https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a]
+
+* (.babelrc setting)[https://babeljs.io/docs/en/babel-preset-env/#options]
+
+```
+:
+ {
+    "presets": [
+      ["env", {
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 9", "> 5% in KR"]
+        }
+      }]
+    ]
+  }
+:
+```
