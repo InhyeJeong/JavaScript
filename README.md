@@ -497,11 +497,11 @@ array.flat(Infinity);
 
 # 14. (babel)[https://slides.com/yamoo9/babel#/]
 
-* (babel-polyfill)[https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a]
+* [babel-polyfill](https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a)
 
-* (.babelrc setting)[https://babeljs.io/docs/en/babel-preset-env/#options]
+* [.babelrc setting](https://babeljs.io/docs/en/babel-preset-env/#options)
 
-```
+```javascript
 :
  {
     "presets": [
