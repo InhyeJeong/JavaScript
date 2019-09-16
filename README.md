@@ -75,7 +75,7 @@
 
 # 3. Object Type
 
-* 자바스크립트의 객체 개념은 생성 방법이나 상속 방식 등에서 C++이나 자바와 같은 기존 객체지향 언어에서의 객체 개념과는 약간 다르다. 자바에서는 클래스를 정의하고, 클래스의 인스턴스를 생성하는 과정에서 객체가 만들어진다. 이에 비해 자바스크립트에서는 **클래스라는 개념이 없고, 객체 리터럴이나 생성자 함수** 등 **별도의 생성 방식**이 존재한다.
+> 자바스크립트의 객체 개념은 생성 방법이나 상속 방식 등에서 C++이나 자바와 같은 기존 객체지향 언어에서의 객체 개념과는 약간 다르다. 자바에서는 클래스를 정의하고, 클래스의 인스턴스를 생성하는 과정에서 객체가 만들어진다. 이에 비해 자바스크립트에서는 **클래스라는 개념이 없고, 객체 리터럴이나 생성자 함수** 등 **별도의 생성 방식**이 존재한다.
 
 ## 1) [Object() 생성자 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
@@ -207,7 +207,7 @@ Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); 
 
 ## 1) arguments 객체
 
-* 매개변수 개수가 정확하게 정해지지 않은 함수를 구현하거나, 전달된 인자의 개수에 따라 서로 다른 처리를 해줘야 하는 함수에 유용
+> 매개변수 개수가 정확하게 정해지지 않은 함수를 구현하거나, 전달된 인자의 개수에 따라 서로 다른 처리를 해줘야 하는 함수에 유용
 
 ```javascript
 function sum() {
@@ -272,8 +272,8 @@ p {
 </p>
 
 ### a. 사용 이유 & 배경
-* 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
-* ex) minification을 webpack default cli로 실행 가능
+> 기존 Web Task Manager (Gulp, Grunt)의 기능 + 모듈 의존성 관리
+> ex) minification을 webpack default cli로 실행 가능
 
 ```
 $ webpack -p
@@ -292,20 +292,20 @@ $ webpack -p
 <script src="module3.js"></script>
 ```
 
-* 기본 모듈 로더들과의 차이점 : 모듈 간의 관계를 Chunk 단위로 나눠 필요할 때 로딩
-* 현대의 웹에서 JS 역할이 커짐에 따라 , Client Side에 들어가는 코드량이 많아지고 복잡해짐
-* 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
-* 가독성이나 다수 모듈 미병행 처리등의 약점 보완위해 Webpack 등장
+> 기본 모듈 로더들과의 차이점 : 모듈 간의 관계를 Chunk 단위로 나눠 필요할 때 로딩
+> 현대의 웹에서 JS 역할이 커짐에 따라 , Client Side에 들어가는 코드량이 많아지고 복잡해짐
+> 복잡한 웹읍 앱을 관리하기 위해 모듈 단위로 관리하는 Common js, AMD, ES6 Modules 등이 등장
+> 가독성이나 다수 모듈 미병행 처리등의 약점 보완위해 Webpack 등장
 
 ### c. 철학
-* **Everything is Module** : 모든 웹 자원(js, css, html)이 모듈 형태로 로딩가능
+> **Everything is Module** : 모든 웹 자원(js, css, html)이 모듈 형태로 로딩가능
 
 ```javascript
 require('base.css')
 require('main.js')
 ```
 
-* **Load only 'what' you need and 'when' you need** : 초기에 불필요한 것들을 모두 로딩하지 않고, 필요할 때 필요한 것만 로딩하여 사용
+> **Load only 'what' you need and 'when' you need** : 초기에 불필요한 것들을 모두 로딩하지 않고, 필요할 때 필요한 것만 로딩하여 사용
 
 ## 2) [웹펙 기본 사용법 (CLI)](https://www.daleseo.com/webpack-basics/)
 
@@ -358,10 +358,9 @@ module.exports = {
 
 ## 1) async, await는 ES8(ECMAScript2017)의 공식 스펙, 비교적 최근에 정의된 문법
 
-```
-자바스크립트는 싱글 스레드 프로그래밍언어기 때문에 비동기처리가 필수.
-ex) setTimeout, callback, promise ...
-```
+
+> 자바스크립트는 싱글 스레드 프로그래밍언어기 때문에 비동기처리가 필수.
+> ex) setTimeout, callback, promise ...
 
 ## 2) How to Use
 * **function 키워드 앞**에 **async**만 붙여주면 되고
@@ -418,10 +417,11 @@ window.$cookies.remove('cookieName')
 ## 1) web worker는 스크립트의 다중 스레드(multi-thread)를 지원
 ## 2) 사용자가 웹 페이지를 이용하면서도, 동시에 시간이 오래 걸리는 자바스크립트 작업도 병행 가능
 ## 3) 필요한 경우
-* 매우 복잡한 수학적 계산 작업
-* 원격지에 있는 리소스에 대한 액세스 작업(또는 로컬 스토리지를 액세스 하는 경우)
-* 백그라운드에서 조용히 오랜시간 작업애햐 하는 경우
-* UI 쓰레드에 방해 없이 지속적으로 수행해야 하는 작업 등
+> 매우 복잡한 수학적 계산 작업
+> 원격지에 있는 리소스에 대한 액세스 작업(또는 로컬 스토리지를 액세스 하는 경우)
+> 백그라운드에서 조용히 오랜시간 작업애햐 하는 경우
+> UI 쓰레드에 방해 없이 지속적으로 수행해야 하는 작업 등
+
 ## 4) [Functions and classes available to workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Functions_and_classes_available_to_workers)
 
 # 11. [JavaScript Single Thread](https://seolhun.github.io/JS-SingleThreadJS/)
