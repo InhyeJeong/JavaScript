@@ -1,4 +1,4 @@
-# JavaScript-Study
+# JavaScript-Study :books: :computer:
 * JavaScript study
 * Code Review study
 * [CSS study](https://ko.learnlayout.com/toc.html)
