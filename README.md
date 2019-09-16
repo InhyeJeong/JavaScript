@@ -436,7 +436,7 @@ window.$cookies.remove('cookieName')
 
 * 부모 div
 
-```style
+```css
 .cover-wrapper {
   width: 500px;
   height: 70px;
@@ -447,7 +447,7 @@ window.$cookies.remove('cookieName')
 
 * 자식 img
 
-```style
+```css
 cover-img {
   position: absolute;
   min-width: 1000%;
