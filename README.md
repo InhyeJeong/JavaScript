@@ -496,10 +496,21 @@ array.flat(Infinity);
 
 
 # 14. [babel](https://slides.com/yamoo9/babel#/)
+## 1) polyfill 이란? 
+```
+Polyfill은 구현 브라우저에서도 문제없이 사용될 수 있도록 모던 브라우저의 네이티브 코드에 상응하는 코드를 말한다.
+```
+## 2) [babel-polyfill](https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a)
 
-## 1) [babel-polyfill](https://medium.com/@ljs0705/babel-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-a1d0e6bd021a)
+```
+babel은 문법을 변환해주는 역할만 할 뿐이다.
+polyfill은 프로그램이 처음에 시작될 때 현재 브라우저에서 지원하지 않는 함수를 검사해서
+각 object의 prototype에 붙여주는 역할을 한다.
 
-## 2) .babelrc
+즉, babel은 [컴파일-타임]에 실행되고 babel-polyfill은 [런-타임]에 실행된다.
+```
+
+## 3) .babelrc
 
 * [settings](https://babeljs.io/docs/en/babel-preset-env/#options)
 * [queries](https://github.com/browserslist/browserslist#queries)
