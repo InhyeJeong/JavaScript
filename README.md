@@ -1,7 +1,7 @@
-# JavaScript-Study :books: :computer:
-* JavaScript study
-* Code Review study
-* [CSS study](https://ko.learnlayout.com/toc.html)
+# :pushpin: JavaScript-Study
+* JavaScript study :books:
+* Code Review study :computer:
+* [CSS study](https://ko.learnlayout.com/toc.html) :lollipop:
 
 -------------------------------------
 
