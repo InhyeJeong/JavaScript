@@ -458,3 +458,38 @@ cover-img {
 }
 
 ```
+
+# 13. flat() & flatMap()
+
+* IE, Edge not support
+
+## 1) [flat()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+
+```javascript
+arr.flat([depth]);
+```
+
+```javascript
+var arr1 = [1, 2, [3, 4]];
+arr1.flat(); // [1, 2, 3, 4]
+
+var arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat(); // [1, 2, 3, 4, [5, 6]]
+
+var arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2); // [1, 2, 3, 4, 5, 6]
+
+//  빈 슬롯 제거
+var arr4 = [1, 2, , 4, 5];
+arr4.flat(); // [1, 2, 4, 5]
+```
+
+## 2) [flatMap()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
+
+* [nested array를 flatten array로 바꾸는 방법](https://medium.com/@Dongmin_Jang/javascript-nested-array%EB%A5%BC-flatten-array%EB%A1%9C-%EB%B0%94%EA%BE%B8%EB%8A%94-%EB%B0%A9%EB%B2%95-42c5cf9b0018)
+
+```javasript
+// array가 nested array를 포함하지 않을 때까지 재귀적으로 flat 하게 하려면
+array.flat(Infinity);
+// → [1, 2, 3]
+```
