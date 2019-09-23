@@ -541,5 +541,19 @@ array.flat(Infinity);
 ```css
 .container {
   background-attachment: fixed;
+  background-size: cover;
+}
+```
+
+* text underline
+
+```css
+.scene header h1:after{
+  content: '';
+  border-bottom: 1px solid white;
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 ```
