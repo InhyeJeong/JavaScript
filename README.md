@@ -557,3 +557,7 @@ array.flat(Infinity);
   margin-top: 1rem;
 }
 ```
+
+* [basicScroll](https://github.com/electerious/basicScroll)
+* [simpleParallax](https://github.com/geosigno/simpleParallax)
+* [jarallax](https://github.com/nk-o/jarallax) : cross-browsing
