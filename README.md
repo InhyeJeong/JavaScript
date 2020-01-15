@@ -561,3 +561,31 @@ array.flat(Infinity);
 * [basicScroll](https://github.com/electerious/basicScroll)
 * [simpleParallax](https://github.com/geosigno/simpleParallax)
 * [jarallax](https://github.com/nk-o/jarallax) : cross-browsing
+
+# 16. Shallow & Deep Copy
+
+> 자바스크립트는 **불변형의 데이터** 를 선언할 때 **포인터와 값** 모두 생성하지만, **오브젝트(배열)** 을 생성할 때에는 메모리 절약을 위해 **포인터만 새로 할당**할 뿐이다.
+
+## 1) shallow copy
+
+```javascript
+const a = 1;
+const b = a;
+b = 2;
+console.log(a, b);
+```
+* Object.assign()
+* Spread 문법 사용
+
+## 2) deep copy
+
+```javascript
+const a = { p : 1 };
+const b = a;
+b.p = 2;
+console.log(a.p, b.p);
+```
+
+* JSON 객체의 메소드
+* 자바스크립트 재귀 사용
+
