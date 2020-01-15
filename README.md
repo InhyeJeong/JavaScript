@@ -589,3 +589,4 @@ console.log(a.p, b.p);
 * JSON 객체의 메소드
 * 자바스크립트 재귀 사용
 
+* [참고](https://velog.io/@ddalpange/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B0%9D%EC%B2%B4-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0)
