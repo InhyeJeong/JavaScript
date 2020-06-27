@@ -15,6 +15,8 @@
 * [동기적 및 비동기적 호출](https://www.youtube.com/watch?v=j0Viy3v97gY)
 * [Promise()](https://www.youtube.com/watch?v=CA5EDD4Hjz4)
 
+* [비동기적 Javascript - 싱글스레드 기반 JS의 비동기 처리 방법](https://hudi.kr/%eb%b9%84%eb%8f%99%ea%b8%b0%ec%a0%81-javascript-%ec%8b%b1%ea%b8%80%ec%8a%a4%eb%a0%88%eb%93%9c-%ea%b8%b0%eb%b0%98-js%ec%9d%98-%eb%b9%84%eb%8f%99%ea%b8%b0-%ec%b2%98%eb%a6%ac-%eb%b0%a9%eb%b2%95/)
+
 # 2. 가변영역 고정영역 함께 사용하는 레이아웃
 
 <p align="center">
